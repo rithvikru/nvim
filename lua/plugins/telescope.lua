@@ -16,5 +16,19 @@ return {
       end,
       desc = "Live grep",
     },
+    {
+      "<leader>fb",
+      function()
+        require("telescope.builtin").buffers()
+      end,
+      desc = "Find buffers",
+    },
+    {
+      "<leader>fh",
+      function()
+        require("telescope.builtin").help_tags()
+      end,
+      desc = "Search help tags",
+    },
   }
 }
