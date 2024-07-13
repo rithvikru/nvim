@@ -58,3 +58,11 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+local configs = require("nvim-treesitter.configs")
+configs.setup({
+  ensure_installed = { "cpp", "python", "rust", "tsx", "javascript", "html", "lua" },
+  sync_install = false,
+  highlight = { enable = true },
+  indent = { enable = true },  
+})
