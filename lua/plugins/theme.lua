@@ -1,9 +1,10 @@
 return {
-  "nyoom-engineering/oxocarbon.nvim",
-  name = "oxocarbon",
-  priority = 1000,
-  config = function()
-    vim.opt.background = "dark"
-    vim.cmd.colorscheme("oxocarbon")
-  end,
+	"catppuccin/nvim",
+	name = "catppuccin",
+	priority = 1000,
+	opts = {},
+	config = function(_, opts)
+		require("catppuccin").setup(opts)
+		vim.cmd.colorscheme("catppuccin")
+	end,
 }
