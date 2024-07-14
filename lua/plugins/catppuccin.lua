@@ -1,5 +1,10 @@
 return {
-  "catppuccin/nvim", name = "catppuccin", priority = 1000,
+  "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme "catppuccin"
+  end,
   opts = {
     color_overrides = {
       mocha = {
@@ -8,5 +13,5 @@ return {
         crust = "#000000",
       },
     },
-  }
+  },
 }
