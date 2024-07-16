@@ -10,7 +10,7 @@ return {
         "<leader>rt",
         ":CompetiTest run<CR>",
         { desc = "Run test cases" },
-      }
+      },
     },
     config = function(_, opts)
       require("competitest").setup(opts)
