@@ -1,19 +1,26 @@
 return {
+	-- {
+	-- 	"catppuccin/nvim",
+	-- 	name = "catppuccin",
+	-- 	priority = 1000,
+	-- 	opts = {},
+	-- 	config = function(_, opts)
+	-- 		require("catppuccin").setup(opts)
+	-- 		vim.cmd.colorscheme("catppuccin")
+	-- 	end,
+	-- },
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		opts = {},
+		"Mofiqul/vscode.nvim",
+    opts = {},
 		config = function(_, opts)
-			require("catppuccin").setup(opts)
-			vim.cmd.colorscheme("catppuccin")
+			require("vscode").setup(opts)
+      vim.cmd.colorscheme("vscode")
+      vim.o.background = "dark"
 		end,
 	},
 	{
-		{
-			"stevearc/dressing.nvim",
-			opts = {},
-		},
+		"stevearc/dressing.nvim",
+		opts = {},
 	},
 	{
 		"akinsho/bufferline.nvim",
