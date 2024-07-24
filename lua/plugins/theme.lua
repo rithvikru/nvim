@@ -59,4 +59,14 @@ return {
       require("hologram").setup(opts)
     end,
   },
+  {
+    "chentoast/marks.nvim",
+    opts = {
+      default_mappings = true,
+      builtin_marks = { ".", "<", ">", "^" }
+    },
+    config = function()
+      require("marks").setup()
+    end
+  }
 }
