@@ -1,0 +1,4 @@
+**/.vscode
+.neoconf.json
+lazy-lock.json
+.stylua.toml
